@@ -119,3 +119,9 @@ variable "dns_servers" {
   description = "Container DNS servers. This is a list of strings specifying the IP addresses of the DNS servers."
   default     = []
 }
+
+variable "links" {
+  type =        "list"
+  description = "Links to other containers. This is a list of strings in the form \"container:alias\""
+  default = []
+}
