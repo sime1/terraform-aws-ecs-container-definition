@@ -14,7 +14,7 @@ locals {
     mountPoints            = "${var.mount_points}"
     dnsServers             = "${var.dns_servers}"
     ulimits                = "${var.ulimits}"
-
+    privileged             = "${var.essential}"
     links                  = "${var.links}"
     portMappings = "${var.port_mappings}"
 

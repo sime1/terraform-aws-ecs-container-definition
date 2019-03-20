@@ -130,3 +130,8 @@ variable "links" {
   description = "Links to other containers. This is a list of strings in the form \"container:alias\""
   default = []
 }
+variable "privileged" {
+  type        = "string"
+  description = "Determines if the container is run in privileged mode. Due to how Terraform type casts booleans in json it is required to double quote this value"
+  default     = "false"
+}
