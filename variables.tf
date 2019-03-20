@@ -125,3 +125,8 @@ variable "ulimits" {
   description = "Container ulimit settings. This is a list of maps, where each map should contain \"name\", \"hardLimit\" and \"softLimit\""
   default     = []
 }
+variable "links" {
+  type =        "list"
+  description = "Links to other containers. This is a list of strings in the form \"container:alias\""
+  default = []
+}

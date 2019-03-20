@@ -15,6 +15,7 @@ locals {
     dnsServers             = "${var.dns_servers}"
     ulimits                = "${var.ulimits}"
 
+    links                  = "${var.links}"
     portMappings = "${var.port_mappings}"
 
     healthCheck = "${var.healthcheck}"
