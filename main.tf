@@ -15,10 +15,10 @@ locals {
     dnsServers             = "${var.dns_servers}"
     ulimits                = "${var.ulimits}"
     privileged             = "${var.essential}"
+    repositoryCredentials  = "${var.repository_credentials}"
     links                  = "${var.links}"
-    portMappings = "${var.port_mappings}"
-
-    healthCheck = "${var.healthcheck}"
+    portMappings           = "${var.port_mappings}"
+    healthCheck            = "${var.healthcheck}"
 
     logConfiguration = {
       logDriver = "${var.log_driver}"

@@ -129,6 +129,11 @@ variable "links" {
   type =        "list"
   description = "Links to other containers. This is a list of strings in the form \"container:alias\""
   default = []
+
+variable "repository_credentials" {
+  type        = "map"
+  description = "Container repository credentials; required when using a private repo.  This map currently supports a single key; \"credentialsParameter\", which should be the ARN of a Secrets Manager's secret holding the credentials"
+  default     = {}
 }
 variable "privileged" {
   type        = "string"
